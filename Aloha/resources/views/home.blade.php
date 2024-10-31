@@ -5,12 +5,25 @@
 </head>
 <body>
     <h1>Página Inicial</h1>
+
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: inline;">
+    @csrf
+    <button type="submit" class="btn btn-danger">Deslogar</button>
+
+</form>
     <div>
         <a href="{{ route('login') }}">
             <button>Login</button>
         </a>
-        <a href="{{ route('admin.dashboard') }}">
-            <button>Dashboard de Administrador</button>
+        @auth
+            @if(auth()->user()->is_admin)
+                <a href="{{ route('admin.dashboard') }}">
+                    <button>Dashboard de Administrador</button>
+                </a>
+            @endif
+        @endauth
+        <a href="{{ route('register') }}">
+            <button>Cadastro</button>
         </a>
     </div>
     <h2>Opções de Viagens</h2>
