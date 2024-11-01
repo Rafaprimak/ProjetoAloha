@@ -27,6 +27,9 @@ Route::post('/register', [RegisterController::class, 'register']);
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
-Route::middleware(['auth', 'is_admin'])->group(function () {
+
+//Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+// Rota Administrativa Protegida
+Route::middleware(['auth'])->group(function () {
     Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
 });
