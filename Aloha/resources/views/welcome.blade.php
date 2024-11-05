@@ -34,12 +34,27 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('login') }}">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('register') }}">Registrar</a>
-                    </li>
+                    @guest
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('login') }}">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('register') }}">Registrar</a>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <span class="nav-link text-white">{{ auth()->user()->name }}</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('logout') }}"
+                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                Sign-Out
+                            </a>
+                        </li>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    @endguest
                 </ul>
             </div>
         </nav>
@@ -51,7 +66,7 @@
         <p class="text-center" style="color: #555;">Seja bem-vindo</p>
 
         <div class="carousel-container p-4 my-4 bg-white">
-            <h2 class="text-center mb-4" style="color: #7c0c6e;">Destinos</h2>
+            <h2 class="text-center mb-4" style="color: #7c0c6e;">Sonhos</h2>
             <div id="destinosCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-wrap="true">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
