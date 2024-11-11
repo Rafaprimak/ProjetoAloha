@@ -20,8 +20,13 @@ class AuthenticatedSessionController extends Controller
     {
         Auth::guard('web')->logout();
 
+        // Limpar todos os dados da sessão
+        $request->session()->flush();
+
+        // Invalidar a sessão
         $request->session()->invalidate();
 
+        // Regenerar o token da sessão
         $request->session()->regenerateToken();
 
         return redirect('/'); // Redireciona para a página inicial
