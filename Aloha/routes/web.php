@@ -6,14 +6,14 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\LocaisController;
 
 Auth::routes();
 
-// Página Inicial (Visitante)
+Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 Route::get('/', [HomeController::class, 'publicHome'])->name('public.home');
 
-// Página Inicial do Usuário Autenticado
-Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/locais', [App\Http\Controllers\LocaisController::class, 'index'])->name('locais');
 
 // Rotas de Autenticação
 Route::get('/login', function () {

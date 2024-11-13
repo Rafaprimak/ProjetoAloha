@@ -15,16 +15,21 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7c0c6e;">
             <a class="navbar-brand" href="{{ route('public.home') }}">
-                <img src="{{ asset('img/LOGO1.png') }}" alt="Logo" style="height: 60px;">
+                <div style="background-color: white; border-radius: 12px">
+                    <img src="{{ asset('img/LOGO1.png') }}" alt="Logo" style="height: 60px;">
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('public.home') }}">Home</a>
-                    </li>
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{ route('public.home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{ route('locais') }}">Locais</a>
+                </li>
                     @auth
                         @if(auth()->user()->is_admin)
                             <li class="nav-item">
@@ -32,11 +37,8 @@
                             </li>
                         @endif
                     @endauth
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Locais</a>
-                    </li>
                 </ul>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     @guest
                         <li class="nav-item">
                             <a class="nav-link text-white" href="{{ route('login') }}">Login</a>
