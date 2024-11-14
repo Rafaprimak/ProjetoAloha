@@ -4,28 +4,25 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Event; // Ensure this class exists in the specified namespace or create it if it doesn't exist
-
+use App\Models\Pais;
 
 class Local extends Model
 {
+    use HasFactory;
 
-    // Define the table associated with the model
     protected $table = 'locais';
 
-    // Define the attributes that are mass assignable
     protected $fillable = [
         'nome',
-        'endereco',
-        'cidade',
-        'estado',
-        'cep',
+        'descricao', // Adicione outros campos conforme necessário
+        'pais_id',
     ];
 
-    // Define any relationships if necessary
-    // For example, if a Local has many Events
-    public function events()
+    /**
+     * Define the inverse relationship with Pais.
+     */
+    public function pais()
     {
-        return $this->hasMany(Event::class);
+        return $this->belongsTo(Pais::class, 'pais_id');
     }
 }

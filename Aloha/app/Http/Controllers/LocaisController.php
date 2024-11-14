@@ -4,16 +4,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pais; 
-use App\Models\Local; // Ensure that the Local model exists in the App\Models namespace
-
+use App\Models\Local;
 
 class LocaisController extends Controller
 {
     public function index()
     {
         $paises = Pais::all();
-        $locais = Local::all();
+        return view('locais.index', compact('paises'));
+    }
 
-        return view('locais.index', compact('paises', 'locais'));
+    /**
+     * Mostra os locais de um país específico.
+     *
+     * @param  \App\Models\Pais  $pais
+     * @return \Illuminate\View\View
+     */
+    public function show(Pais $pais)
+    {
+        $locais = $pais->locais; // Fetch locais related to the selected país
+        return view('locais.show', compact('pais', 'locais'));
     }
 }

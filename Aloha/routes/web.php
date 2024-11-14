@@ -14,6 +14,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware(
 Route::get('/', [HomeController::class, 'publicHome'])->name('public.home');
 
 Route::get('/locais', [App\Http\Controllers\LocaisController::class, 'index'])->name('locais');
+Route::get('/locais/{pais}', [LocaisController::class, 'show'])->name('locais.show');
+
 
 // Rotas de Autenticação
 Route::get('/login', function () {
