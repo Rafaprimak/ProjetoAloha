@@ -14,55 +14,57 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7c0c6e;">
-            <a class="navbar-brand" href="{{ route('public.home') }}">
-                <div style="background-color: white; border-radius: 12px">
-                    <img src="{{ asset('img/LOGO1.png') }}" alt="Logo" style="height: 60px;">
-                </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{{ route('public.home') }}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{{ route('locais') }}">Locais</a>
-                </li>
-                    @auth
-                        @if(auth()->user()->is_admin)
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="{{ route('admin.dashboard') }}">Dashboard de Administrador</a>
-                            </li>
-                        @endif
-                    @endauth
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    @guest
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="{{ route('login') }}">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="{{ route('register') }}">Registrar</a>
-                        </li>
-                    @else
-                        <li class="nav-item">
-                            <span class="nav-link text-white">{{ auth()->user()->name }}</span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="{{ route('logout') }}"
-                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                Sign-Out
-                            </a>
-                        </li>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    @endguest
-                </ul>
+        <a class="navbar-brand" href="{{ route('public.home') }}">
+            <div style="background-color: white; border-radius: 12px;">
+                <img src="{{ asset('img/LOGO1.png') }}" alt="Logo" style="height: 60px;">
             </div>
-        </nav>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{ route('public.home') }}" style="font-size: 1.1rem; margin-right: 15px;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{ route('locais') }}" style="font-size: 1.1rem; margin-right: 15px;">Locais</a>
+                </li>
+                @auth
+                    @if(auth()->user()->is_admin)
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('admin.dashboard') }}" style="font-size: 1.1rem; margin-right: 15px;">Dashboard de Administrador</a>
+                        </li>
+                    @endif
+                @endauth
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                @guest
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{ route('login') }}" style="font-size: 1.1rem; margin-left: 15px;">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{ route('register') }}" style="font-size: 1.1rem; margin-left: 15px;">Registrar</a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <span class="nav-link text-white" style="font-size: 1.1rem;">{{ auth()->user()->name }}</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{ route('logout') }}"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
+                        style="font-size: 1.1rem; margin-left: 15px;">
+                            Sign-Out
+                        </a>
+                    </li>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                @endguest
+            </ul>
+        </div>
+    </nav>
     </header>
 
     <main class="container mt-4">
