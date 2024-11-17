@@ -31,10 +31,5 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name
 
 // Rotas de Autenticação
 Route::middleware(['auth'])->group(function () {
-    //Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');    
 });
-
-//Route::middleware(['authadm'])->group(function () {
-//    Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-//});

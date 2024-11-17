@@ -73,7 +73,7 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 1,
                 'nome' => 'Rio de Janeiro',
-                'descricao' => 'Cidade maravilhosa',
+                'descricao' => 'Com belas praias, montanhas espetaculares e a trilha sonora de samba e bossa nova, o Rio de Janeiro encanta os visitantes. A famosa praia de Ipanema continua sendo o lugar perfeito para caminhar, pegar um bronzeado e desfilar.',
                 'pais_id' => 1,
                 'created_at' => '2024-11-14 14:32:39',
                 'updated_at' => '2024-11-14 14:32:39',
@@ -89,11 +89,43 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 3,
                 'nome' => 'Buenos Aires',
-                'descricao' => 'Capital dos Manitos',
+                'descricao' => 'Buenos Aires tem uma energia impossível de ignorar. A cidade oferece comidas e bebidas como Malbec e carnes incrivelmente boas, além de fazer você virar a noite em boates e salões de dança.',
                 'pais_id' => 3,
                 'created_at' => '2024-11-14 14:32:39',
                 'updated_at' => '2024-11-14 14:32:39',
             ],
+            [
+                'id' => 4,
+                'nome' => 'São Paulo',
+                'descricao' => 'A culinária e a arte de São Paulo, a maior cidade da América do Sul, é tão multinacional quanto sua diversificada população de mais de 11 milhões de habitantes.',
+                'pais_id' => 1,
+                'created_at' => '2024-11-14 14:32:39',
+                'updated_at' => '2024-11-14 14:32:39',
+            ],
+            [
+                'id' => 5,
+                'nome' => 'Natal',
+                'descricao' => 'Portal para as deslumbrantes praias do Rio Grande do Norte, a cidade de Natal fica no alto da costa atlântica do Brasil, na foz do Rio Potengi.',
+                'pais_id' => 1,
+                'created_at' => '2024-11-14 14:32:39',
+                'updated_at' => '2024-11-14 14:32:39',
+            ],
+            [
+                'id' => 6,
+                'nome' => 'Aparecida do Norte',
+                'descricao' => 'A Cidade de Aparecida está situada no Vale do Paraíba, interior de São Paulo e é destaque no turismo religioso mundial recebendo mais de 12 milhões de turistas e peregrinos todos os anos.',
+                'pais_id' => 1,
+                'created_at' => '2024-11-14 14:32:39',
+                'updated_at' => '2024-11-14 14:32:39',
+            ],
+            [
+                'id' => 7,
+                'nome' => 'Gramado',
+                'descricao' => 'A pequena cidade brasileira de Gramado é um refúgio pitoresco e verdejante que abriga algumas surpresas encantadoras.',
+                'pais_id' => 1,
+                'created_at' => '2024-11-14 14:32:39',
+                'updated_at' => '2024-11-14 14:32:39',
+            ]
         ]);
 
         // Populando a tabela 'migrations'
