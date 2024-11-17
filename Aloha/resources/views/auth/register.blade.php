@@ -86,11 +86,11 @@
                 <label for="password_confirmation" style="margin-bottom: 5px;">Confirmar senha:</label>
                 <input type="password" id="password_confirmation" name="password_confirmation" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
                 
-                <button type="submit" style="padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Registrar</button>
+                <button type="submit" class="btn" style="padding: 10px; border: none; border-radius: 4px; cursor: pointer;">Registrar</button>
             </form>
             <div class="text-center mt-4" style="margin-top: 20px;">
                 <p>Ja possui uma conta?</p>
-                <a href="{{ route('login') }}" class="btn btn-secondary" style="color: white; text-decoration: none;">Fazer Login</a>
+                <a href="{{ route('login') }}" class="btn2 btn-secondary" style="color: white; text-decoration: none;">Fazer Login</a>
             </div>
 
             @if ($errors->any())
@@ -188,10 +188,26 @@
             transform: scale(1.1);
             color: #b531a2 !important;
         }
-        .carousel-container, .packages-container, .map-container {
-            background-color: #ffffff; /* Fundo branco */
+        .btn{
+            background-color: #7c0c6e;
+            border: none;
+            color: white;
+        }
+        .btn:hover{
+            background-color: #b531a2;
+            color: white;
+        }
+
+        .btn2{
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 10px;
             border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn2:hover{
+            background-color: greenyellow;
+            color: white;
         }
     </style>
 </body>

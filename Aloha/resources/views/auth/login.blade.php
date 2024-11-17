@@ -82,11 +82,11 @@
                 <label for="password" style="margin-bottom: 5px;">Senha:</label>
                 <input type="password" id="password" name="password" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
                 
-                <button type="submit" style="padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Entrar</button>
+                <button type="submit" class="btn" style="padding: 10px; border: none; border-radius: 4px; cursor: pointer;">Entrar</button>
             </form>
             <div class="text-center mt-4" style="margin-top: 20px;">
                 <p>Não possui uma conta?</p>
-                <a href="{{ route('register') }}" class="btn btn-secondary" style="color: white; text-decoration: none;">Registrar</a>
+                <a href="{{ route('register') }}" class="btn2 btn-secondary" style="color: white; text-decoration: none;">Registrar</a>
             </div>
 
             @if ($errors->any())
@@ -190,6 +190,27 @@
             background-color: #ffffff; /* Fundo branco */
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn{
+            background-color: #7c0c6e;
+            border: none;
+            color: white;
+        }
+        .btn:hover{
+            background-color: #b531a2;
+            color: white;
+        }
+
+        .btn2{
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .btn2:hover{
+            background-color: greenyellow;
+            color: white;
         }
     </style>
 </body>
