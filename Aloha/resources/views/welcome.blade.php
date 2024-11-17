@@ -66,12 +66,12 @@
     </header>
 
     <main class="container mt-4">
-        <h1 class="text-center" style="color: #7c0c6e;">Página Inicial</h1>
+        <h1 class="text-center" style="color: #7c0c6e;">Realizar Sonhos é o Nosso Destino</h1>
 
-        <p class="text-center" style="color: #555;">Seja bem-vindo ao site da sua empresa.</p>
+        <p class="text-center" style="color: #555;">Seja bem-vindo ao site da Aloha Turismo</p>
 
         <div class="carousel-container p-4 my-4 bg-white">
-            <h2 class="text-center mb-4" style="color: #7c0c6e;">Sonhos</h2>
+            <h2 class="text-center mb-4" style="color: #7c0c6e;">Destinos</h2>
             <div id="destinosCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-wrap="true">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -80,8 +80,8 @@
                                 <div class="card">
                                     <img src="{{ asset('img/destino1.jpg') }}" class="card-img-top" alt="Destino 1">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #7c0c6e;">Destino 1</h5>
-                                        <p class="card-text" style="color: #555;">Descrição do destino 1.</p>
+                                        <h5 class="card-title" style="color: #7c0c6e;">Aparecida do Norte</h5>
+                                        <p class="card-text" style="color: #555;">A Cidade de Aparecida está situada no Vale do Paraíba, interior de São Paulo e é destaque no turismo religioso mundial recebendo mais de 12 milhões de turistas e peregrinos todos os anos.</p>
                                     </div>
                                 </div>
                             </div>
@@ -89,8 +89,8 @@
                                 <div class="card">
                                     <img src="{{ asset('img/destino2.jpg') }}" class="card-img-top" alt="Destino 2">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #7c0c6e;">Destino 2</h5>
-                                        <p class="card-text" style="color: #555;">Descrição do destino 2.</p>
+                                        <h5 class="card-title" style="color: #7c0c6e;">Buenos Aires</h5>
+                                        <p class="card-text" style="color: #555;">Buenos Aires tem uma energia impossível de ignorar. A cidade oferece comidas e bebidas como Malbec e carnes incrivelmente boas, além de fazer você virar a noite em boates e salões de dança.</p>
                                     </div>
                                 </div>
                             </div>
@@ -98,8 +98,8 @@
                                 <div class="card">
                                     <img src="{{ asset('img/destino3.jpg') }}" class="card-img-top" alt="Destino 3">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #7c0c6e;">Destino 3</h5>
-                                        <p class="card-text" style="color: #555;">Descrição do destino 3.</p>
+                                        <h5 class="card-title" style="color: #7c0c6e;">Gramado</h5>
+                                        <p class="card-text" style="color: #555;">A pequena cidade brasileira de Gramado é um refúgio pitoresco e verdejante que abriga algumas surpresas encantadoras.</p>
                                     </div>
                                 </div>
                             </div>
@@ -107,8 +107,8 @@
                                 <div class="card">
                                     <img src="{{ asset('img/destino4.jpg') }}" class="card-img-top" alt="Destino 4">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #7c0c6e;">Destino 4</h5>
-                                        <p class="card-text" style="color: #555;">Descrição do destino 4.</p>
+                                        <h5 class="card-title" style="color: #7c0c6e;">Rio de Janeiro</h5>
+                                        <p class="card-text" style="color: #555;">Com belas praias, montanhas espetaculares e a trilha sonora de samba e bossa nova, o Rio de Janeiro encanta os visitantes. A famosa praia de Ipanema continua sendo o lugar perfeito para caminhar, pegar um bronzeado e desfilar.</p>
                                     </div>
                                 </div>
                             </div>
@@ -120,8 +120,8 @@
                                 <div class="card">
                                     <img src="{{ asset('img/destino5.jpg') }}" class="card-img-top" alt="Destino 5">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #7c0c6e;">Destino 5</h5>
-                                        <p class="card-text" style="color: #555;">Descrição do destino 5.</p>
+                                        <h5 class="card-title" style="color: #7c0c6e;">São Paulo</h5>
+                                        <p class="card-text" style="color: #555;">A culinária e a arte de São Paulo, a maior cidade da América do Sul, é tão multinacional quanto sua diversificada população de mais de 11 milhões de habitantes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -129,8 +129,8 @@
                                 <div class="card">
                                     <img src="{{ asset('img/destino6.jpg') }}" class="card-img-top" alt="Destino 6">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #7c0c6e;">Destino 6</h5>
-                                        <p class="card-text" style="color: #555;">Descrição do destino 6.</p>
+                                        <h5 class="card-title" style="color: #7c0c6e;">Natal</h5>
+                                        <p class="card-text" style="color: #555;">Portal para as deslumbrantes praias do Rio Grande do Norte, a cidade de Natal fica no alto da costa atlântica do Brasil, na foz do Rio Potengi.</p>
                                     </div>
                                 </div>
                             </div>
@@ -139,8 +139,8 @@
                                 <div class="card">
                                     <img src="{{ asset('img/destino1.jpg') }}" class="card-img-top" alt="Destino 1">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #7c0c6e;">Destino 1</h5>
-                                        <p class="card-text" style="color: #555;">Descrição do destino 1.</p>
+                                        <h5 class="card-title" style="color: #7c0c6e;">Aparecida do Norte</h5>
+                                        <p class="card-text" style="color: #555;">A Cidade de Aparecida está situada no Vale do Paraíba, interior de São Paulo e é destaque no turismo religioso mundial recebendo mais de 12 milhões de turistas e peregrinos todos os anos.</p>
                                     </div>
                                 </div>
                             </div>
@@ -148,8 +148,8 @@
                                 <div class="card">
                                     <img src="{{ asset('img/destino2.jpg') }}" class="card-img-top" alt="Destino 2">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #7c0c6e;">Destino 2</h5>
-                                        <p class="card-text" style="color: #555;">Descrição do destino 2.</p>
+                                        <h5 class="card-title" style="color: #7c0c6e;">Buenos Aires</h5>
+                                        <p class="card-text" style="color: #555;">Buenos Aires tem uma energia impossível de ignorar. A cidade oferece comidas e bebidas como Malbec e carnes incrivelmente boas, além de fazer você virar a noite em boates e salões de dança.</p>
                                     </div>
                                 </div>
                             </div>
@@ -175,8 +175,8 @@
                     <div class="card">
                         <img src="{{ asset('img/pacote1.jpg') }}" class="card-img-top" alt="Pacote 1">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #7c0c6e;">Pacote 1</h5>
-                            <p class="card-text" style="color: #555;">Descrição do pacote 1.</p>
+                            <h5 class="card-title" style="color: #7c0c6e;">Visita ao maracanã</h5>
+                            <p class="card-text" style="color: #555;">O maior estádio do Rio de Janeiro, este pacote inclui uma visita completa ao estádio, conhecendo todo o interior dele, como cabines especiais, vestiário dos jogadores, sala de trófeus e muito mais!</p>
                         </div>
                     </div>
                 </div>
@@ -184,8 +184,8 @@
                     <div class="card">
                         <img src="{{ asset('img/pacote2.jpg') }}" class="card-img-top" alt="Pacote 2">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #7c0c6e;">Pacote 2</h5>
-                            <p class="card-text" style="color: #555;">Descrição do pacote 2.</p>
+                            <h5 class="card-title" style="color: #7c0c6e;">Resort All Inclusive em Natal</h5>
+                            <p class="card-text" style="color: #555;">Passe suas férias neste Resort 5 estrelas com tudo incluso na cidade de Natal, muitas piscinas, recreação para crianças e aguás quentes!</p>
                         </div>
                     </div>
                 </div>
@@ -193,8 +193,8 @@
                     <div class="card">
                         <img src="{{ asset('img/pacote3.jpg') }}" class="card-img-top" alt="Pacote 3">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #7c0c6e;">Pacote 3</h5>
-                            <p class="card-text" style="color: #555;">Descrição do pacote 3.</p>
+                            <h5 class="card-title" style="color: #7c0c6e;">Visita a pontos Turisticos Aparecida</h5>
+                            <p class="card-text" style="color: #555;">Conheça todos os pontos turisticos da cidade de Aparecida do Norte, incluindo passeio de bondinho, caminhada da passarela e muito mais!.</p>
                         </div>
                     </div>
                 </div>
@@ -210,8 +210,100 @@
         </div>
     </main>
 
-    <footer class="bg-light text-center py-3">
-        <p>&copy; 2023 Sua Empresa. Todos os direitos reservados.</p>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="contact-form-container p-4 my-4 bg-light rounded">
+                    <h2 class="text-center mb-4" style="color: #7c0c6e;">Assine nossa newsletter e receba as ofertas da Aloha Turismo</h2>
+                    <form method="POST" action="">
+                        @csrf
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" value="{{ old('name') }}" required class="form-control" placeholder="Seu Nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" value="{{ old('email') }}" required class="form-control" placeholder="Seu Email">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Assinar</button>
+                    </form>
+
+                    @if ($errors->any())
+                        <div class="mt-3">
+                            <ul class="text-danger">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if(session('success'))
+                        <div class="mt-3 text-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Aloha Turismo -->
+            <div class="col-md-4">
+                <h5>Aloha Turismo</h5>
+                <ul class="list-unstyled">
+                    <li>Sobre Nós</li>
+                    <li>Fale Conosco</li>
+                    <li>Onde Estamos</li>
+                </ul>
+            </div>
+            <!-- Central de Atendimento -->
+            <div class="col-md-4">
+                <h5>Central de Atendimento</h5>
+                <ul class="list-unstyled">
+                    <li>Suporte</li>
+                    <li>Horário de Atendimento</li>
+                    <li>Central de Ajuda</li>
+                </ul>
+            </div>
+            <!-- Termos -->
+            <div class="col-md-4">
+                <h5>Termos</h5>
+                <ul class="list-unstyled">
+                    <li>Condição de Uso do Site</li>
+                    <li>Política de Privacidade</li>
+                    <li>Condições Gerais</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <!-- Formas de Pagamento -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h5>Formas de Pagamento</h5>
+                <img src="{{ asset('img/pix.png') }}" alt="Pix" style="width:50px; margin-right:10px;">
+                <img src="{{ asset('img/cartaocredito.png') }}" alt="Cartão" style="width:50px;">
+            </div>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h5>Siga-nos nas redes sociais</h5>
+                <a href="#" class="mr-3">
+                    <img src="{{ asset('img/instagram_icon.png') }}" alt="Instagram" style="width:40px;">
+                </a>
+                <a href="#">
+                    <img src="{{ asset('img/facebook-logo-1-2.png') }}" alt="Facebook" style="width:40px;">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; 2024 Aloha Turismo. Todos os direitos reservados.</p>
+    </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
