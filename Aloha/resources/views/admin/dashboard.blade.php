@@ -114,4 +114,60 @@
         </div>
     </div>
 </body>
+<footer class="bg-light text-center py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Aloha Turismo -->
+            <div class="col-md-4">
+                <h5>Aloha Turismo</h5>
+                <ul class="list-unstyled">
+                    <li>Sobre Nós</li>
+                    <li>Fale Conosco</li>
+                    <li>Onde Estamos</li>
+                </ul>
+            </div>
+            <!-- Central de Atendimento -->
+            <div class="col-md-4">
+                <h5>Central de Atendimento</h5>
+                <ul class="list-unstyled">
+                    <li>Suporte</li>
+                    <li>Horário de Atendimento</li>
+                    <li>Central de Ajuda</li>
+                </ul>
+            </div>
+            <!-- Termos -->
+            <div class="col-md-4">
+                <h5>Termos</h5>
+                <ul class="list-unstyled">
+                    <li>Condição de Uso do Site</li>
+                    <li>Política de Privacidade</li>
+                    <li>Condições Gerais</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <!-- Formas de Pagamento -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h5>Formas de Pagamento</h5>
+                <img src="{{ asset('img/pix.png') }}" alt="Pix" style="width:50px; margin-right:10px;">
+                <img src="{{ asset('img/cartaocredito.png') }}" alt="Cartão" style="width:50px;">
+            </div>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h5>Siga-nos nas redes sociais</h5>
+                <a href="#" class="mr-3">
+                    <img src="{{ asset('img/instagram_icon.png') }}" alt="Instagram" style="width:40px;">
+                </a>
+                <a href="#">
+                    <img src="{{ asset('img/facebook-logo-1-2.png') }}" alt="Facebook" style="width:40px;">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; 2024 Aloha Turismo. Todos os direitos reservados.</p>
+    </div>
+    </footer>
 </html>
