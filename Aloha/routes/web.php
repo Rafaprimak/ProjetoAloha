@@ -33,4 +33,5 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');    
     Route::post('/admin/buses/{bus}/update-status', [DashboardController::class, 'updateStatus'])->name('buses.updateStatus');
+    Route::resource('buses', DashboardController::class);
 });

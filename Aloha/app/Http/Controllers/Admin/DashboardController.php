@@ -25,4 +25,30 @@ class DashboardController extends Controller
 
         return redirect()->back()->with('success', 'Status atualizado com sucesso.');
     }
+
+    public function create()
+    {
+        return view('admin.buses.create');
+    }
+
+    public function destroy(Bus $bus)
+    {
+        $bus->delete();
+        return redirect()->back()->with('success', 'Ônibus excluído com sucesso.');
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'status' => 'required|string',
+        ]);
+
+        Bus::create([
+            'name' => $request->name,
+            'status' => $request->status,
+        ]);
+
+        return redirect()->route('buses.index')->with('success', 'Ônibus adicionado com sucesso.');
+    }
 }
