@@ -201,5 +201,33 @@ class DatabaseSeeder extends Seeder
             ],
             // Adicione mais registros conforme necessário
         ]);
+
+        // Populando a tabela 'buses'
+        DB::table('buses')->insert([
+            [
+                'name' => 'Ônibus 1',
+                'status' => 'Ativo',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Ônibus 2',
+                'status' => 'Ativo',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Ônibus 3',
+                'status' => 'Inativo',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Ônibus 4',
+                'status' => 'Em Manutenção',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ]);
     }
 }
