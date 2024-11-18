@@ -231,7 +231,7 @@
                         <button type="submit" class="btn btn-primary btn-block">Assinar</button>
                     </form>
 
-                    @if ($errors->any())
+                    @if(isset($errors) && $errors->any())
                         <div class="mt-3">
                             <ul class="text-danger">
                                 @foreach ($errors->all() as $error)
