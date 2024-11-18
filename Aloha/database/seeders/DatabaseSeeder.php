@@ -73,7 +73,7 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 1,
                 'nome' => 'Rio de Janeiro',
-                'descricao' => 'Com belas praias, montanhas espetaculares e a trilha sonora de samba e bossa nova, o Rio de Janeiro encanta os visitantes. A famosa praia de Ipanema continua sendo o lugar perfeito para caminhar, pegar um bronzeado e desfilar.',
+                'descricao' => 'Com belas praias, montanhas espetaculares e a trilha sonora de samba e bossa nova, o Rio de Janeiro encanta os visitantes. A famosa praia de Ipanema continua sendo o lugar perfeito para caminhar, pegar um bronzeado e desfilar. A maior estátua art déco do mundo, o Cristo Redentor, convida todos a uma visita ao Corcovado. Além disso, o Rio é lar de museus de ciência e arte, uma cena gastronômica badalada, um enorme estádio de futebol, vida noturna incrível e cerca de 80 km de praias. Se você visitar no Carnaval, as comemorações anuais no Rio são repletas de música, dança, carros alegóricos, fantasias, comida e bebida, que dão vida a uma festa sem fim.',
                 'pais_id' => 1,
                 'created_at' => '2024-11-14 14:32:39',
                 'updated_at' => '2024-11-14 14:32:39',
@@ -81,7 +81,11 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 2,
                 'nome' => 'Cidade del Leste',
-                'descricao' => 'Compras Internacionais',
+                'descricao' => 'Quando se fala em turismo no Paraguai (ou República do Paraguai), na América do Sul, o primeiro pensamento dos brasileiros é o turismo voltado para compras em Ciudad del Este. Embora esse seja um forte atrativo do país, o Paraguai tem mais a oferecer para quem o visita.
+
+                O país possui belas paisagens, muita história, além de uma gastronomia rica e bem diferente do que estamos acostumados aqui no Brasil. E com a vantagem de estar pertinho do Brasil sendo, assim como em outros países da América do Sul, um belo incentivo para a visita.
+
+                O Paraguai, assim como a Bolívia, não tem acesso ao mar. Fica na parte sul do continente limitado pelo Brasil, pela Argentina e pela própria Bolívia. Um dos menores países da América do Sul, tem aproximadamente 406,7 mil km², sendo um pouco maior que o estado brasileiro de Mato Grosso do Sul.',
                 'pais_id' => 2,
                 'created_at' => '2024-11-14 14:32:39',
                 'updated_at' => '2024-11-14 14:32:39',
@@ -89,7 +93,7 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 3,
                 'nome' => 'Buenos Aires',
-                'descricao' => 'Buenos Aires tem uma energia impossível de ignorar. A cidade oferece comidas e bebidas como Malbec e carnes incrivelmente boas, além de fazer você virar a noite em boates e salões de dança.',
+                'descricao' => 'Buenos Aires tem uma energia impossível de ignorar. A cidade oferece comidas e bebidas como Malbec e carnes incrivelmente boas, além de fazer você virar a noite em boates e salões de dança. Mas há também um lado discreto que vale a pena conhecer. Caminhe pelas ruas de paralelepípedos dos bairros pela manhã para conferir a arquitetura neoclássica no ritmo que preferir. É claro que Palermo conta com restaurantes e lojas badaladas, mas comer um choripán em um piquenique descontraído nos Bosques de Palermo tem seu charme. Visite San Telmo para conhecer a Feria de San Telmo, uma enorme feira de rua todos os domingos, e apreciar um pouco de tango (assista a um show pago ou confira uma apresentação ao ar livre na Plaza Dorrego). Se quiser uma atividade mais calma, visite um museu de arte ou galeria e mate a fome em uma barraca no Mercado de San Telmo. Siga um ritmo rápido ou devagar: a escolha é sua.',
                 'pais_id' => 3,
                 'created_at' => '2024-11-14 14:32:39',
                 'updated_at' => '2024-11-14 14:32:39',
@@ -97,7 +101,7 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 4,
                 'nome' => 'São Paulo',
-                'descricao' => 'A culinária e a arte de São Paulo, a maior cidade da América do Sul, é tão multinacional quanto sua diversificada população de mais de 11 milhões de habitantes.',
+                'descricao' => 'A culinária e a arte de São Paulo, a maior cidade da América do Sul, é tão multinacional quanto sua diversificada população de mais de 11 milhões de habitantes. Com os restaurantes do bairro Jardins servindo todos os tipos imagináveis de pratos, e lanchonetes do mundo inteiro, não seria estranho você ir a São Paulo só para comer. Mas você perderia museus de nível internacional, excursões pelos diferentes e animados bairros, além de ótimas compras.',
                 'pais_id' => 1,
                 'created_at' => '2024-11-14 14:32:39',
                 'updated_at' => '2024-11-14 14:32:39',
@@ -105,7 +109,7 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 5,
                 'nome' => 'Natal',
-                'descricao' => 'Portal para as deslumbrantes praias do Rio Grande do Norte, a cidade de Natal fica no alto da costa atlântica do Brasil, na foz do Rio Potengi.',
+                'descricao' => 'Portal para as deslumbrantes praias do Rio Grande do Norte, a cidade de Natal fica no alto da costa atlântica do Brasil, na foz do Rio Potengi. Fuja do agito nas praias escondidas de Pipa e Pirangi ou corra para o agito de Genipabu e Tibau do Sul. A cidade é cercada pelo Parque Estadual das Dunas. Você pode rodar com um buggy por dunas de areia de mais de 10 metros ou passear de dromedário. A cidade tem o ar mais puro do continente, de acordo com a NASA, e abriga ainda o maior cajueiro do mundo.',
                 'pais_id' => 1,
                 'created_at' => '2024-11-14 14:32:39',
                 'updated_at' => '2024-11-14 14:32:39',
@@ -113,7 +117,7 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 6,
                 'nome' => 'Aparecida do Norte',
-                'descricao' => 'A Cidade de Aparecida está situada no Vale do Paraíba, interior de São Paulo e é destaque no turismo religioso mundial recebendo mais de 12 milhões de turistas e peregrinos todos os anos.',
+                'descricao' => 'A Cidade de Aparecida, conhecida popularmente como Aparecida do Norte, está situada no Vale do Paraíba, interior de São Paulo e é destaque no turismo religioso mundial recebendo mais de 12 milhões de turistas e peregrinos todos os anos. Na cidade encontra-se o Santuário Nacional com a imagem de Nossa Senhora da Conceição Aparecida, encontrada por pescadores no Rio Paraíba do Sul em 1717.',
                 'pais_id' => 1,
                 'created_at' => '2024-11-14 14:32:39',
                 'updated_at' => '2024-11-14 14:32:39',
@@ -121,7 +125,7 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 7,
                 'nome' => 'Gramado',
-                'descricao' => 'A pequena cidade brasileira de Gramado é um refúgio pitoresco e verdejante que abriga algumas surpresas encantadoras.',
+                'descricao' => 'A pequena cidade brasileira de Gramado é um refúgio pitoresco e verdejante que abriga algumas surpresas encantadoras. Depois de se divertir bastante nos pedalinhos e nos bosques de pinheiros da Floresta Negra em torno do Lago Negro, faça uma visita ao Snowland, o único parque de neve Indoor da América Latina. As crianças vão adorar o Mini Mundo, um parque de miniaturas que contém réplicas minúsculas de paisagens conhecidas.',
                 'pais_id' => 1,
                 'created_at' => '2024-11-14 14:32:39',
                 'updated_at' => '2024-11-14 14:32:39',

@@ -59,23 +59,21 @@
         </div>
     </nav>
     </header>
-
-    <h1>Bem-vindo ao Dashboard do Admin</h1>
-
-    <!-- Add Bus Button -->
-    <a href="{{ route('buses.create') }}" class="btn btn-primary mb-3">Adicionar Novo Ônibus</a>
+    <main class="container mt-4">
+    <h1 class="text-center">Bem-vindo ao Dashboard do Admin</h1>
 
     <!-- Bus CRUD Operations -->
 
     <!-- Display Bus List -->
-    <table class="table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome do Ônibus</th>
-                <th>Status</th>
-                <th>Ações</th>
-            </tr>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Ônibus</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
         </thead>
         <tbody>
             @foreach($buses as $bus)
@@ -106,13 +104,19 @@
             @endforeach
         </tbody>
     </table>
+    </div>
+    <!-- Add Bus Button -->
+    <div class="text-center mt-4">
+        <a href="{{ route('buses.create') }}" class="btn btn-primary mb-3">Adicionar Novo Ônibus</a>
+    </div>
 
     <div class="map-container p-4 my-4 bg-white">
-        <h2 class="text-center mb-4" style="color: #7c0c6e;">Localização Ônibus</h2>
+        <h2 class="text-center mb-4" style>Localização Ônibus</h2>
         <div class="d-flex justify-content-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.356497418815!2d-51.479116223735495!3d-25.359365930102413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef37e5f0d42345%3A0x1c341796f1339403!2sALOHA%20TRANSPORTES%20E%20TURISMO.!5e0!3m2!1spt-BR!2sbr!4v1731346336937!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+    </main>
 </body>
 <footer class="bg-light text-center py-5">
     <div class="container">
@@ -171,3 +175,35 @@
     </div>
     </footer>
 </html>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .navbar-nav .nav-link {
+        transition: transform 0.2s, color 0.2s;
+    }
+    .navbar-nav .nav-link:hover {
+        transform: scale(1.1);
+        color: #b531a2 !important;
+    }
+    .table {
+        margin-top: 20px;
+    }
+    .table thead {
+        background-color: #7c0c6e;
+        color: white;
+    }
+    .btn-primary {
+        background-color: #7c0c6e;
+        border-color: #7c0c6e;
+    }
+    .btn-primary:hover {
+        background-color: #b531a2;
+        border-color: #b531a2;
+    }
+</style>

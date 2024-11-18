@@ -65,11 +65,13 @@
         </div>
     </nav>
     </header>
-    <main>
+@extends('layouts.app')
+
+@section('content')
 
     
     <main class="container mt-4">
-    <h1 class="text-center" style="color: #7c0c6e;">Países</h1>
+    <h1 class="text-center"><strong>Países</strong></h1>
     <div class="row">
         <!-- Brasil -->
         <div class="col-md-12 mb-4">
@@ -84,6 +86,7 @@
                     <div class="row">
                         <div class="col-md-3 mb-3">
                             <img src="{{ asset('img/praiaindex.jpg') }}" class="img-fluid img-thumbnail" alt="Brasil" style="border-radius: 15px;">
+                        
                         </div>
                         <div class="col-md-3 mb-3">
                             <img src="{{ asset('img/rioindex.jpg') }}" class="img-fluid img-thumbnail" alt="Brasil" style="border-radius: 15px;">
@@ -211,7 +214,7 @@
     </div>
     </footer>
 
-
+@endsection
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
